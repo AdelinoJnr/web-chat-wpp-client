@@ -1,4 +1,5 @@
 import Chat from "./components/Chat";
+import Menu from "./components/Menu";
 import './styles/global.css';
 // import { useEffect } from "react";
 // import { socket } from "./service/socket";
@@ -6,6 +7,7 @@ import './styles/global.css';
 function App() {
   return (
     <main className="main-content">
+      <Menu />
       <Chat />
     </main>
   );

@@ -6,6 +6,7 @@
 body { 
   background-color: #0a1014;
   color: white;
+  font-size: 14px;
   /* font-family: 'Press Start 2P', cursive; */
   font-family: 'Roboto', sans-serif;
 }
@@ -18,8 +19,10 @@ body {
 .content-chat {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
   height: 100vh;
-  width: 562px;
+  min-width: 562px;
   background-image: url('../image/fundo_wpp_black.jpg');
 }
 
@@ -29,13 +32,14 @@ body {
   position: fixed;
   bottom: 0;
   background-color: #202c33;
-  width: 562px;
+  min-width: 562px;
+  height: 60px;
 }
 
 .content-message-box > input {
   padding: 12px;
   margin: 10px;
-  width: 76%;
+  width: 75%;
   border-radius: 10px;
   color: #f0f0f0;
   background-color: #2a3a42;
@@ -56,7 +60,8 @@ body {
   color: #606f77;
   width: 20px;
   height: 20px;
-  padding: 10px;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .icon-send {
@@ -73,9 +78,10 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
-  width: 562px;
+  min-width: 562px;
   height: 60px;
   background-color: #202c33;
+  z-index: 2;
 }
 
 .icon-search {
@@ -94,4 +100,127 @@ body {
 
 .content-icons-menu > div {
   margin-right: 20px;
+}
+
+.content-perfil-user {
+  display: flex;
+  align-items: center;
+}
+
+.content-perfil-user > section {
+  margin: 0 15px;
+}
+
+.content-perfil-user > div > p {
+  font-size: 1.2em;
+}
+
+.content-perfil-user > div > span {
+  font-size: 0.8em;
+}
+
+.icon-perfil {
+  width: 35px;
+  height: 35px;
+}
+
+/* Balloon */
+.content-balloon {
+  background-color: #005c4bde;
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px;
+  min-width: 60px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.content-balloon:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #005c4bde;
+  bottom: -15px;
+  left: 40px;
+}
+
+.content-balloon {
+  margin-bottom: 20px;
+}
+
+.content-balloon > span {
+  font-size: 0.8em;
+  padding: 10px 10px 0 10px;
+}
+
+/* Box */
+.content-box-top {
+  height: 60px;
+  width: 562px;
+  background-color: #202c33;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.content-box-bottom {
+  height: 60px;
+  width: 562px;
+  background-color: #202c33;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* Header Menu */
+.content-header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 60px;
+  background-color: #202c33;
+}
+
+.content-header-menu > section {
+  margin-left: 15px;
+}
+
+.icon-message {
+  width: 25px;
+  height: 25px;
+}
+
+.content-menu {
+  margin-right: 2px;
+}
+
+/* Search Menu */
+.content-search-menu {
+  background-color: #172026;
+}
+
+.content-search-menu > input {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #202c33;
+  color: white;
+}
+
+.content-search-menu > input:focus {
+  outline: none;
+}
+
+/* History */
+.content-history {
+  background-color: #172026;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
 }
