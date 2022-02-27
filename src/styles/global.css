@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  background-color: #0a1014;
+  color: white;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.content-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 562px;
+  background-image: url('../image/fundo_wpp_black.jpg');
+}
+
+.content-message-box {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #202c33;
+  width: 562px;
+}
+
+.content-message-box > input {
+  padding: 12px;
+  margin: 10px;
+  width: 76%;
+  border-radius: 10px;
+  color: #f0f0f0;
+  background-color: #2a3a42;
+  border: none;
+}
+
+.content-message-box > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.content-message-box > input:focus {
+  outline: none;
+}
+
+.icon-emoji {
+  color: #606f77;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.icon-send {
+  color: #606f77;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Hearder */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 562px;
+  height: 60px;
+  background-color: #202c33;
+}
+
+.icon-search {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-menu {
+  width: 25px;
+  height: 25px;
+}
+
+.content-icons-menu {
+  display: flex;
+}
+
+.content-icons-menu > div {
+  margin-right: 20px;
+}
