@@ -7,8 +7,10 @@ import './styles/global.css';
 function App() {
   return (
     <main className="main-content">
-      <Menu />
-      <Chat />
+      <section className="content-web-chat">
+        <Menu />
+        <Chat />
+      </section>
     </main>
   );
 }
